@@ -1,0 +1,155 @@
+.page-home {
+
+	// clear out margins since this page mostly doesn't follow any template
+	p {
+		margin: 0;
+	}
+
+
+	.hero-panel {
+		p {
+			@extend .f-28;
+		}
+		
+
+		background: url(https://eb6b937f66f486c0e282-3d5c58dfea4eabc60180ac6f4bc6e3c0.ssl.cf3.rackcdn.com/background.hero.jpg) 50% 0 no-repeat;
+
+		.play-button {
+			margin-top: 240px;
+		}
+	}
+
+	.hero-left {
+		padding: 65px 100px 42px 42px;
+	}
+
+	.hero-video {
+		position: relative;
+	}
+
+
+
+	.play-hero {
+		
+	}
+	.play-button {
+
+	}
+
+
+	.red-panel {
+		background: url(https://eb6b937f66f486c0e282-3d5c58dfea4eabc60180ac6f4bc6e3c0.ssl.cf3.rackcdn.com/background.red-texture.jpg) 50% 0;
+		padding: 105px 0;
+	}
+		.red-panel .panel-left {
+			padding-left: 42px;
+			padding-right: 20px;
+
+			p strong {
+				margin-top: 20px;
+				display: block;
+
+				img {
+					position: relative;
+					top: 6px;
+				}
+			}
+		}
+		.red-panel .panel-right {
+			padding-left: 26px;
+			padding-right: 26px;
+
+			p:first-child {
+				margin-top: -14px;
+				margin-bottom: 40px;
+			}
+		}
+
+	.black-panel {
+		background: url(https://eb6b937f66f486c0e282-3d5c58dfea4eabc60180ac6f4bc6e3c0.ssl.cf3.rackcdn.com/background.black-texture.jpg) 50% 0;
+		padding: 85px 0;
+
+		.panel-left {
+			padding-right: 40px;
+			padding-left: 42px;
+		}
+		.panel-right {
+			padding-left: 20px;
+			padding-right: 42px;
+		}
+	}
+
+	.background-bed {
+		background: url(https://eb6b937f66f486c0e282-3d5c58dfea4eabc60180ac6f4bc6e3c0.ssl.cf3.rackcdn.com/fpo/bed.jpg) 50% 50% no-repeat;
+		background-size: cover;
+	}
+
+	.white-panel {
+		padding: 85px 0;
+
+		h2 {
+			margin-bottom: 65px;
+		}
+		.item {
+			padding: 10px 20px;
+		}
+
+		p.text-center {
+			margin-bottom: 40px;
+		}
+	}
+
+	.more-videos-panel {
+		padding: 70px 0;
+
+		.video {
+			background: #000;
+			height: 357px;
+			position: relative;
+		}
+		.play-button {
+			margin-top: 95px;
+		}
+
+		.panel-left {
+			margin-right: 25px;
+			@extend .padding-left;
+		}
+		.panel-right {
+			margin-left: 25px;
+			@extend .padding-right;
+		}
+
+		.description {
+			margin-right: 220px;
+		}
+		.share {
+			//margin-left: -100%;
+		}
+
+		.video-1 {
+			background-image: url('https://eb6b937f66f486c0e282-3d5c58dfea4eabc60180ac6f4bc6e3c0.ssl.cf3.rackcdn.com/yt-video-1.jpg');
+			background-size: cover;
+		}
+
+		.video-2 {
+			background-image: url('https://eb6b937f66f486c0e282-3d5c58dfea4eabc60180ac6f4bc6e3c0.ssl.cf3.rackcdn.com/yt-video-2.jpg');
+			background-size: cover;
+		}
+
+		@media screen and (max-width: $screen-xl) {
+			.description {
+				margin-right: 130px;
+			}
+
+			.share dt {
+				display: none;
+			}
+			.share dd {
+				margin-left: 5px;
+			}
+		}
+	}
+
+}
+

@@ -1,0 +1,148 @@
+.need-help {
+	// clear out margins since this page mostly doesn't follow any template
+	p {
+		margin: 0;
+	}
+
+	.hero-panel {
+
+		position: relative;
+
+		.hero-image {
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 450px;
+		}	
+
+		.hero-left {
+			padding: 65px 100px 0px 42px;
+
+			p {
+				@extend .f-28;
+			}
+		}
+
+		.pure-g {
+			position: relative;
+			z-index: 0;
+
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+
+			.pure-u-1-4 {
+				height: 450px;
+			}
+
+			.pure-u-3-4 {
+				height: 450px;
+				position: relative;
+				z-index: 1;
+				background-color: #FFFFFF;
+			}
+		}
+	}
+
+
+	.icon-panel {
+		@extend .f-28;
+
+		p {
+			@extend .letter-spacing-minus-1;
+		}
+
+		img {
+			width: 30%;
+			float: left;
+			margin-right: -100%;
+		}
+		.panel-content {
+			margin-left: 32%;
+			margin-bottom: 80px;
+		}
+
+		h2 {
+			//line-height: 46px;
+			padding-bottom: 20px;
+			@extend .f-51;
+			@extend .f-w-900;
+			@extend .letter-spacing-minus-3;
+			@extend .lh-point-9;
+
+			a {
+				color: #ffffff;
+			}
+		}
+
+		.panel-left {
+			@extend .padding-left;
+			//@extend .padding-right;
+		}
+		.panel-right {
+			@extend .padding-left;
+			@extend .padding-right;
+		}
+
+	}
+
+
+	.red-panel {
+		background: url(https://eb6b937f66f486c0e282-3d5c58dfea4eabc60180ac6f4bc6e3c0.ssl.cf3.rackcdn.com/background.red-texture.jpg) 50% 0;
+		padding: 105px 0 0 0;
+		position: relative;
+		z-index: 1;
+		color: #fff;
+	}
+
+	.grey-panel {
+		background: url(https://eb6b937f66f486c0e282-3d5c58dfea4eabc60180ac6f4bc6e3c0.ssl.cf3.rackcdn.com/background.grey-texture.jpg) 50% 0;
+		padding: 40px 0 0 0;
+		position: relative;
+		z-index: 1;
+		color: #fff;
+
+		ul {
+			list-style: none;
+			margin: 40px 0 40px;
+			padding: 0;
+
+			img {
+				width: 180px;
+				float: none;
+				margin-right: 0;
+				padding-bottom: 40px;
+			}
+		}
+
+		li {
+			@include inline-block;
+			margin: 0 20px;
+		}
+
+	}
+
+
+	.white-panel {
+		padding: 85px 0;
+
+		h2 {
+			margin-bottom: 65px;
+		}
+		.item {
+			padding: 10px 20px;
+		}
+
+		p.text-center {
+			margin-bottom: 40px;
+		}
+	}
+
+	.black-panel {
+		background: url(https://eb6b937f66f486c0e282-3d5c58dfea4eabc60180ac6f4bc6e3c0.ssl.cf3.rackcdn.com/background.black-texture.jpg) 50% 0;
+		padding: 85px 0 0;
+
+	}
+}
+

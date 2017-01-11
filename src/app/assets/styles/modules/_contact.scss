@@ -1,0 +1,170 @@
+.page-contact {
+
+	h2 {
+		@extend .f-51;
+		@extend .lh-point-9;
+		@extend .letter-spacing-minus-2;
+		color: #000;
+		margin: 0 0 40px 0;
+		font-weight: 800;
+
+	}
+
+	.black-panel {
+		background: url(https://eb6b937f66f486c0e282-3d5c58dfea4eabc60180ac6f4bc6e3c0.ssl.cf3.rackcdn.com/background.black-texture.jpg) 50% 0;
+		padding: 85px 0;
+
+
+
+		h2 {
+			color: #ffffff;
+			text-align: center;
+		}
+
+		p {
+			color: #ffffff;
+			@extend .f-25;
+			margin: 0;
+			@extend .letter-spacing-minus-2;
+		}
+
+		.pure-g {
+			//padding-bottom: 80px;
+		}
+	}
+
+	.panel-contact {
+		margin: 70px 0 20px 0;
+		color: #000;
+
+		@extend .f-21;	
+
+		p {
+			@extend .letter-spacing-minus-1;
+		}
+	}
+
+	fieldset {
+		margin-top: 60px;
+
+		&.first {
+			margin-top: 0;
+
+			legend {
+				border-top: 0;
+				padding-top: 0;
+			}
+		}
+	}
+
+	legend,
+	p.legend {
+		font-weight: 600;
+		@extend .f-21;
+		@extend .letter-spacing-minus-1;
+
+		border: none;
+		border-top: #d4d4d4 solid 1px;
+		margin: 0 0 20px 0;
+		padding: 35px 0 0 0;
+	}
+
+	.cloned {
+		border-top: #d4d4d4 solid 1px;
+		margin-top: 40px;
+		padding-top: 40px;
+	}
+
+	.email-error-message {
+		display: none;
+		margin-left: 12em;
+		
+		&.show {
+			display: block;
+		}
+	}
+
+	.info-submit-message {
+		font-size: 18px;
+	}
+
+	a.link-on-white-bg {
+		&:hover {
+			color: #000000; 
+		}
+	}
+}
+
+
+p.required {
+	text-transform: uppercase;
+	font-weight: 700;
+	@extend .text-red;
+	@extend .add-margin-bottom;
+}
+
+.pure-form-aligned .pure-control-group {
+	margin-bottom: 1em;
+	@extend .f-21;
+
+	label {
+		width: 12em;
+		text-align: left;
+		//@extend .letter-spacing-minus-1;
+	}
+
+}
+
+
+.pure-form input[type=text], .pure-form input[type=password], .pure-form input[type=email], .pure-form input[type=url], .pure-form input[type=date], .pure-form input[type=month], .pure-form input[type=time], .pure-form input[type=datetime], .pure-form input[type=datetime-local], .pure-form input[type=week], .pure-form input[type=number], .pure-form input[type=search], .pure-form input[type=tel], .pure-form input[type=color], .pure-form select, .pure-form textarea {
+	@include border-radius(0);
+
+	&:focus {
+		border-color: #000;
+	}
+}
+
+
+
+input,
+select,
+textarea {
+	@extend .f-21;
+
+	//@include border-radius(0);
+}
+
+
+button.submit {
+	background: #be1622;
+	color: #fff;
+	width: 215px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: $source-sans;
+	font-weight: 700;
+	@extend .letter-spacing-minus-1;
+	@extend .f-18;
+	margin: 30px 0;
+}
+
+button.ms-duplicate-fieldset {
+	background: none;
+	border: none;
+	background: url(https://eb6b937f66f486c0e282-3d5c58dfea4eabc60180ac6f4bc6e3c0.ssl.cf3.rackcdn.com/icon.plus.png) 0 50% no-repeat;
+	@include inline-block;
+	height: 36px;
+	line-height: 36px;
+	padding-left: 46px;
+	font-family: $source-sans;
+	@extend .f-21;
+	@extend .letter-spacing-minus-1;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin: 40px 0 0 0;
+
+	.backgroundsize & {
+		background: url(https://eb6b937f66f486c0e282-3d5c58dfea4eabc60180ac6f4bc6e3c0.ssl.cf3.rackcdn.com/icon.plus-2x.png) 0 50% no-repeat;
+		background-size: 36px 36px;
+	}
+}

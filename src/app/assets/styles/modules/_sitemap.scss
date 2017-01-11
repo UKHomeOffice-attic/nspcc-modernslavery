@@ -1,0 +1,37 @@
+.sitemap {
+
+	// clear out margins since this page mostly doesn't follow any template
+	p {
+		margin: 0;
+	}
+
+	.hero-panel {
+
+		.pure-g {
+			margin-bottom: 20px;
+
+			ul {
+				font-size: 21px;
+			}
+
+			.bold {
+				font-weight: bold;
+			}
+		}
+
+		.pure-u-1-1 {
+
+			padding: 65px 100px 0px 42px;
+
+			p {
+				@extend .f-28;
+			}
+		}
+
+		h2 {
+			padding-bottom: 20px;
+		}
+	}
+
+
+}

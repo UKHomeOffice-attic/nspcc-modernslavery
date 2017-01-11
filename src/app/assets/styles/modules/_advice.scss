@@ -1,0 +1,30 @@
+.advice {
+
+	// clear out margins since this page mostly doesn't follow any template
+	p {
+		margin: 0;
+	}
+
+
+	.hero-panel {
+
+		.pure-u-1-1 {
+
+			padding: 65px 100px 0px 42px;
+			p {
+				@extend .f-28;
+			}
+		}
+	}
+
+
+	.red-panel {
+		background: url(https://eb6b937f66f486c0e282-3d5c58dfea4eabc60180ac6f4bc6e3c0.ssl.cf3.rackcdn.com/background.red-texture.jpg) 50% 0;
+		padding: 105px 0;
+
+		a {
+			color: #000000;
+		}
+	}
+}
+
